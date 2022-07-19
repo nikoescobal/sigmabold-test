@@ -21,6 +21,13 @@ module.exports = {
         'dim-blue': 'hsla(214, 23%, 58%, 1)',
         'logo-red': 'hsla(354, 71%, 64%, 1)',
       },
+      screens: {
+        mobile: '390px',
+        // => @media (min-width: 640px) { ... }
+
+        desktop: '1728px',
+        // => @media (min-width: 1280px) { ... }
+      },
     },
   },
   plugins: [],
