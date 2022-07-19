@@ -31,7 +31,7 @@
             <button class="md:hidden" @click="navOpen = !navOpen">
                 <img src="./assets/mobile/menu.svg" alt="menu">
             </button>
-            <ul class="fixed left-0 right-0 min-h-screen w-full min-h-12 items-center bg-dark-blue mt-8 text-white space-y-4 px-4 transform transition duration-300 translate-x-full md:flex
+            <ul class="fixed left-0 right-0 min-h-screen w-full min-h-12 items-center bg-dark-blue pt-24 text-white space-y-4 mt-8 px-8 transform transition duration-300 translate-x-full md:flex
                 md:relative md:min-h-0 md:space-y-0 md:space-x-10 md:px-0 md:pb-10 md:translate-x-0 lg:space-x-14 desktop:space-x-24"
                 :class="{'translate-x-full': !navOpen}" :class="{'translate-x-0': navOpen}">
                 <li class="underline underline-offset-2">
@@ -57,7 +57,7 @@
         <form>
             <label class="relative block ml-[31px] mr-[28px] pt-[15px] pb-[21px] space-x-4">
                 <input
-                    class="w-full bg-gray-100 placeholder-dark-gray items-center align-middle font-extralight border-none rounded-full h-[31px] pl-[19px] pr-2 focus:outline-none"
+                    class="w-full bg-gray-100 placeholder-dark-gray text-sm md:text-lg lg:text-2xl items-center align-middle placeholder:font-extralight border-none rounded-full h-[31px] pl-[19px] pr-2 focus:outline-none"
                     placeholder="Search" type="text" />
 
                 <span class="absolute inset-y-0 right-0 flex content-center items-center pr-3">
@@ -72,9 +72,9 @@
         </form>
 
         <ul
-            class="snap-proximity items-center px-4 pb-[21px] snap-x space-x-2 flex flex-nowrap whitespace-nowrap overflow-x-scroll text-sm md:text-base lg:text-xl">
-            <p class="ml-10 pr-[6.5px]">Filter by Category</p>
-            <li class="snap-center border-custom-red border text-custom-red py-1 px-4 rounded-full">
+            class="snap-proximity items-center px-4 pb-[21px] snap-x space-x-2 md:space-x-3 lg:space-x-5 desktop:space-x-7 md:justify-center flex flex-nowrap whitespace-nowrap overflow-x-scroll text-sm md:text-base lg:text-xl">
+            <p class="ml-10 pr-[6.5px] lg:pr-12">Filter by Category</p>
+            <li class="snap-center border-custom-red border texts-custom-red py-1 px-4 rounded-full">
                 <a href="#">Reviews</a>
             </li>
             <li class="snap-center border-custom-orange border text-custom-orange py-1 px-4 rounded-full">
@@ -89,10 +89,80 @@
             <li class="snap-center  border-custom-purple border text-custom-purple py-1 px-4 rounded-full">
                 <a href="#">News</a>
             </li>
-
         </ul>
-
     </nav>
+    <main>
+        <article class="mt-6 bg-white rounded my-0 mx-[34px] flex flex-col content-center py-[25px] px-[20px]">
+            <figure class="img">
+                <img src="./assets/Nugg-Club-Products-Filled 2.png" alt="movie night">
+                <figcaption class="mt-3 flex items-center justify-between">
+                    <span class="bg-red py-[2px] px-[12px] text-[15px] rounded-full">Review</span>
+                    <span class="text-smallText text-xs pr-4">2 Minute Read</span>
+                    <span class="text-smallText text-xs">Writer Name</span>
+                </figcaption>
+            </figure>
+
+            <div>
+                <h2 class="my-[20px] text-2xl font-medium">
+                    The best cannabis
+                    prices, guaranteed?
+                </h2>
+                <p class="text-sm ">
+                    2 line preview about the article. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut la met, consectetur adipiscin....
+                </p>
+            </div>
+        </article>
+    </main>
+
+    <div x-data="{ articles: 
+          [{
+            categories: 'Lifestyle', 
+            duration: '2 Minute Read',
+            author: 'Writer Name',
+            title: 'THC for TLC? Lets talk cannabis and intimacy.',
+            description: '2 line preview about the article. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut la met, consectetur adipiscin'
+         }]
+        }">
+        <template x-for="article in articles">
+            <div>
+                <h2 x-text="article.categories"></h2>
+                <h2 x-text="article.duration"></h2>
+                <h2 x-text="article.author"></h2>
+                <h2 x-text="article.title"></h2>
+                <h2 x-text="article.description"></h2>
+            </div>
+        </template>
+
+        <!-- <template x-for="article in articles">
+            <div>
+                <h2 x-text="article.categories"></h2>
+            </div>
+            <article class="mt-6 bg-white rounded my-0 mx-[34px] flex flex-col content-center py-[25px] px-[20px]">
+                <figure class="img">
+                    <img src="./assets/Nugg-Club-Products-Filled 2.png" alt="movie night">
+                    <figcaption class="mt-3 flex items-center justify-between">
+                        <span class="bg-red py-[2px] px-[12px] text-[15px] rounded-full">Review</span>
+                        <span class="text-smallText text-xs pr-4">2 Minute Read</span>
+                        <span class="text-smallText text-xs">Writer Name</span>
+                    </figcaption>
+                </figure>
+
+                <div>
+                    <h2 class="my-[20px] text-2xl font-medium">
+                        The best cannabis
+                        prices, guaranteed?
+                    </h2>
+                    <p class="text-sm ">
+                        2 line preview about the article. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        do
+                        eiusmod tempor incididunt ut la met, consectetur adipiscin....
+                    </p>
+                </div>
+            </article>
+        </template> -->
+    </div>
 
     <script src="../dist/script.js"></script>
     <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
