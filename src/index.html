@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth hover:scroll-auto" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -11,15 +11,43 @@
     <title>Nuggmd</title>
 </head>
 
-<body class="bg-light-gray font-futura">
-    <header>
-        <nav class="fixed w-full bg-dark-blue h-20 flex items-center justify-between pl-[27px] pr-7">
-            <a href="#">
-                <img src="./assets/mobile/logo.svg" alt="Nuggmd logo">
-            </a>
-            <button>
+<body class="flex flex-col min-h-screen bg-light-gray font-futura" x-data="{navOpen: false, scrolledFromTop: false}"
+    x-init="window.pageYOffset >= 50 ? scrolledFromTop = true : scrolledFromTop = false"
+    @scroll.window="window.pageYOffset >= 50 ? scrolledFromTop = true : scrolledFromTop = false" :class="{
+'overflow-hidden': navOpen,
+'overflow-scroll': !navOpen
+}">
+    <header
+        class="w-full bg-dark-blue h-20 flex items-center justify-between pl-[27px] pr-7 transition-all duration-200"
+        :class="{'h-24': !scrolledFromTop, 'h-14': scrolledFromTop}">
+        <a href="#">
+            <img class="transform origin-left z-10 transition duration-200" src="./assets/mobile/logo.svg"
+                alt="Nuggmd logo" :class="{'scale-100': !scrolledFromTop, 'scale-75': scrolledFromTop}">
+        </a>
+        <nav>
+            <button class="md:hidden" @click="navOpen = !navOpen">
                 <img src="./assets/mobile/menu.svg" alt="menu">
             </button>
+            <ul class="fixed left-0 right-0 min-h-screen w-full min-h-12 bg-dark-blue mt-8 text-white space-y-4 px-4 transform transition duration-300 translate-x-full md:flex
+                md:relative md:min-h-0 md:space-y-0 md:space-x-10 md:px-0 md:pb-10 md:translate-x-0"
+                :class="{'translate-x-full': !navOpen}" :class="{'translate-x-0': navOpen}">
+                <li class="">
+                    <a href="#" @click="navOpen = false">Home</a>
+                </li>
+                <li>
+                    <a href="#blog" @click="navOpen = false">Blog</a>
+
+                </li>
+                <li>
+                    <a href="#contact" @click="navOpen = false">Contact</a>
+                </li>
+                <li>
+                    <a href="#login" @click="navOpen = false">Login</a>
+                </li>
+                <li>
+                    <a href="#" @click="navOpen = false">Get Your Card</a>
+                </li>
+            </ul>
         </nav>
     </header>
     <script src="../dist/script.js"></script>
