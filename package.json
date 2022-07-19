@@ -1,0 +1,36 @@
+{
+  "name": "kickoff",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm:build-css\" \"npm:build-js\"",
+    "build-css": "npx tailwindcss -i ./src/css/index.css -o ./dist/main.css --watch",
+    "build-js": "npx esbuild src/js/script.js --outfile=dist/script.js --bundle --watch",
+    "test": "npm run eslint && echo \"✅✅✅ All tests passed ✅✅✅\"",
+    "eslint": "eslint --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikoescobal/kickoff.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nikoescobal/kickoff/issues"
+  },
+  "homepage": "https://github.com/nikoescobal/kickoff#readme",
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.18.9",
+    "eslint": "^8.20.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "postcss-cli": "^10.0.0",
+    "tailwindcss": "^3.1.6"
+  },
+  "dependencies": {
+    "alpinejs": "^3.10.2",
+    "esbuild": "^0.14.49"
+  }
+}

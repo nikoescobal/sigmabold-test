@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/main.css">
+
+    <title>Kickoff Template</title>
+</head>
+
+<body class="bg-light-orange font-montserrat">
+    <div class="w-full h-full pt-40 text-center" x-data="{ open: false }">
+        <button class="py-2 px-4 rounded text-white bg-orange shadow-md" @click="open = ! open">Click
+            Me</button>
+
+        <div class="pt-12 text-white font-bold text-2xl" x-show="open" @click.outside="open = false">This template is
+            pre-configured with
+            Tailwind CSS,
+            Es Build, and
+            AlpineJS</div>
+    </div>
+    <script src="../dist/script.js"></script>
+</body>
+
+
+</html>
