@@ -21,8 +21,11 @@
         class="w-full bg-dark-blue h-20 md:h-[158px] flex items-center justify-between pl-[27px] pr-7 transition-all duration-200"
         :class="{'h-24': !scrolledFromTop, 'h-14': scrolledFromTop}">
         <a href="#">
-            <img class="transform origin-left z-10 transition duration-200" src="./assets/mobile/logo.svg"
+            <img class="block md:hidden transform origin-left transition duration-200" src="./assets/mobile/logo.svg"
                 alt="Nuggmd logo" :class="{'scale-100': !scrolledFromTop, 'scale-75': scrolledFromTop}">
+            <img class="hidden md:block transform origin-left transition duration-200"
+                src="./assets/mobile/logo-red.svg" alt="Nuggmd logo-red"
+                :class="{'scale-100': !scrolledFromTop, 'scale-75': scrolledFromTop}">
         </a>
         <nav>
             <button class="md:hidden" @click="navOpen = !navOpen">
@@ -44,7 +47,7 @@
                 <li>
                     <a href="#login" @click="navOpen = false">Login</a>
                 </li>
-                <li class="bg-custom-green rounded py-[10.5px] px-[28.359px]">
+                <li class="bg-custom-green inline-flex mt-40 rounded py-[10.5px] px-[28.359px]">
                     <a href="#" @click="navOpen = false">Get Your Card</a>
                 </li>
             </ul>
