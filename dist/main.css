@@ -603,6 +603,18 @@ video {
   margin-bottom: 1px;
 }
 
+.ml-6 {
+  margin-left: 1.5rem;
+}
+
+.ml-8 {
+  margin-left: 2rem;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
 .block {
   display: block;
 }
@@ -970,6 +982,14 @@ video {
 
 .pb-1 {
   padding-bottom: 0.25rem;
+}
+
+.pl-7 {
+  padding-left: 1.75rem;
+}
+
+.pr-\[6\.5px\] {
+  padding-right: 6.5px;
 }
 
 .align-middle {
