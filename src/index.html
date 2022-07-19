@@ -18,7 +18,7 @@
 'overflow-scroll': !navOpen
 }">
     <header
-        class="w-full bg-dark-blue h-20 flex items-center justify-between pl-[27px] pr-7 transition-all duration-200"
+        class="w-full bg-dark-blue h-20 md:h-[158px] flex items-center justify-between pl-[27px] pr-7 transition-all duration-200"
         :class="{'h-24': !scrolledFromTop, 'h-14': scrolledFromTop}">
         <a href="#">
             <img class="transform origin-left z-10 transition duration-200" src="./assets/mobile/logo.svg"
@@ -28,7 +28,7 @@
             <button class="md:hidden" @click="navOpen = !navOpen">
                 <img src="./assets/mobile/menu.svg" alt="menu">
             </button>
-            <ul class="fixed left-0 right-0 min-h-screen w-full min-h-12 bg-dark-blue mt-8 text-white space-y-4 px-4 transform transition duration-300 translate-x-full md:flex
+            <ul class="fixed left-0 right-0 min-h-screen w-full min-h-12 items-center bg-dark-blue mt-8 text-white space-y-4 px-4 transform transition duration-300 translate-x-full md:flex
                 md:relative md:min-h-0 md:space-y-0 md:space-x-10 md:px-0 md:pb-10 md:translate-x-0"
                 :class="{'translate-x-full': !navOpen}" :class="{'translate-x-0': navOpen}">
                 <li class="">
@@ -44,7 +44,7 @@
                 <li>
                     <a href="#login" @click="navOpen = false">Login</a>
                 </li>
-                <li>
+                <li class="bg-custom-green rounded py-[10.5px] px-[28.359px]">
                     <a href="#" @click="navOpen = false">Get Your Card</a>
                 </li>
             </ul>
