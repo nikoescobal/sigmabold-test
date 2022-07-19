@@ -20,6 +20,7 @@ module.exports = {
         'lighter-blue': 'hsla(194, 87%, 60%, 1)',
         'dim-blue': 'hsla(214, 23%, 58%, 1)',
         'logo-red': 'hsla(354, 71%, 64%, 1)',
+        'light-gray': 'hsla(0, 0%, 94%, 1)',
       },
       screens: {
         mobile: '390px',
