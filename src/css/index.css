@@ -2,3 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "futura-light";
+  src: url("../fonts/Futura/FuturaPTLight.otf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "futura-bold";
+  src: url("../fonts/Futura/FuturaPTBold.otf");
+  font-weight: 500;
+}

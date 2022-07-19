@@ -4,6 +4,8 @@ module.exports = {
   theme: {
     fontFamily: {
       futura: ['futura', 'sans-serif'],
+      'futura-light': ['futura-light', 'sans-serif'],
+      'futura-bold': ['futura-bold', 'sans-serif'],
     },
     extend: {
       colors: {

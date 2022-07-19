@@ -92,77 +92,90 @@
         </ul>
     </nav>
     <main>
-        <article class="mt-6 bg-white rounded my-0 mx-[34px] flex flex-col content-center py-[25px] px-[20px]">
-            <figure class="img">
-                <img src="./assets/Nugg-Club-Products-Filled 2.png" alt="movie night">
-                <figcaption class="mt-3 flex items-center justify-between">
-                    <span class="bg-red py-[2px] px-[12px] text-[15px] rounded-full">Review</span>
-                    <span class="text-smallText text-xs pr-4">2 Minute Read</span>
-                    <span class="text-smallText text-xs">Writer Name</span>
-                </figcaption>
-            </figure>
+        <h2 class="text-dark-blue text-center font-futura-bold pt-[45px] text-[25px]">Feature Blog Posts</h2>
+        <article class="mt-6 bg-white rounded my-0 mx-[34px] flex flex-col content-center py-[25px] px-5">
+            <figure>
+                <img class="object-fit w-full" src="./assets/desktop/article-image-1.png" alt="article-image-1">
+                <section class="mt-3 flex items-center justify-between">
+                    <div class="space-x-2">
+                        <span
+                            class="bg-custom-orange text-custom-black py-0.5 px-3 text-[15px] rounded-full">Lifestyle</span>
+                        <span class=" text-dark-gray text-xs pr-4">2 Minute Read</span>
+                    </div>
 
-            <div>
-                <h2 class="my-[20px] text-2xl font-medium">
-                    The best cannabis
-                    prices, guaranteed?
-                </h2>
-                <p class="text-sm ">
-                    2 line preview about the article. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut la met, consectetur adipiscin....
-                </p>
-            </div>
-        </article>
-    </main>
-
-    <div x-data="{ articles: 
-          [{
-            categories: 'Lifestyle', 
-            duration: '2 Minute Read',
-            author: 'Writer Name',
-            title: 'THC for TLC? Lets talk cannabis and intimacy.',
-            description: '2 line preview about the article. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut la met, consectetur adipiscin'
-         }]
-        }">
-        <template x-for="article in articles">
-            <div>
-                <h2 x-text="article.categories"></h2>
-                <h2 x-text="article.duration"></h2>
-                <h2 x-text="article.author"></h2>
-                <h2 x-text="article.title"></h2>
-                <h2 x-text="article.description"></h2>
-            </div>
-        </template>
-
-        <!-- <template x-for="article in articles">
-            <div>
-                <h2 x-text="article.categories"></h2>
-            </div>
-            <article class="mt-6 bg-white rounded my-0 mx-[34px] flex flex-col content-center py-[25px] px-[20px]">
-                <figure class="img">
-                    <img src="./assets/Nugg-Club-Products-Filled 2.png" alt="movie night">
-                    <figcaption class="mt-3 flex items-center justify-between">
-                        <span class="bg-red py-[2px] px-[12px] text-[15px] rounded-full">Review</span>
-                        <span class="text-smallText text-xs pr-4">2 Minute Read</span>
-                        <span class="text-smallText text-xs">Writer Name</span>
-                    </figcaption>
-                </figure>
-
-                <div>
-                    <h2 class="my-[20px] text-2xl font-medium">
-                        The best cannabis
-                        prices, guaranteed?
-                    </h2>
-                    <p class="text-sm ">
+                    <span class="text-dark-gray text-xs">Writer Name</span>
+                </section>
+                <figcaption class="text-custom-black ">
+                    <h3 class="my-5 text-[22px] font-futura-bold">
+                        THC for TLC? Let’s talk cannabis and intimacy.
+                    </h3>
+                    <p class="text-sm">
                         2 line preview about the article. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                         do
                         eiusmod tempor incididunt ut la met, consectetur adipiscin....
                     </p>
-                </div>
-            </article>
-        </template> -->
-    </div>
+                </figcaption>
+            </figure>
+        </article>
+        <article class="mt-6 bg-white rounded my-0 mx-[34px] flex flex-col content-center py-[25px] px-5">
+            <figure>
+                <img class="object-fit w-full" src="./assets/desktop/article-image-2.png" alt="article-image-2">
+                <section class="mt-3 flex items-center justify-between">
+                    <div class="space-x-2">
+                        <span class="bg-light-red text-custom-black py-0.5 px-3 text-[15px] rounded-full">Review</span>
+                        <span class=" text-dark-gray text-xs pr-4">2 Minute Read</span>
+                    </div>
+                    <span class="text-dark-gray text-xs">Writer Name</span>
+                </section>
+                <figcaption class=" text-custom-black ">
+                    <h3 class="my-5 text-[22px] font-futura-bold">
+                        The best cannabis
+                        prices, guaranteed?
+                    </h3>
+                    <p class="text-sm">
+                        2 line preview about the article. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        do
+                        eiusmod tempor incididunt ut la met, consectetur adipiscin....
+                    </p>
+                </figcaption>
+            </figure>
+        </article>
+        <section class="mt-5 text-white bg-semiBlue rounded my-0 mx-[34px] flex flex-col content-center py-[25px] px-5">
+
+            <div class="flex items-center justify-between">
+                <p class="text-sm">Weekly Wellness Tip</p>
+                <img src="./assets/heart.svg" alt="hear shape">
+            </div>
+
+            <div class="mt-[22px]">
+                <h2 class=" text-2xl">For better sleep, turn off your phone 30 minutes before sleep :)
+                </h2>
+            </div>
+        </section>
+        <article class="mt-6 bg-white rounded my-0 mx-[34px] flex flex-col content-center py-[25px] px-5">
+            <figure>
+                <img class="object-fit" src="./assets/desktop/article-image-2.png" alt="article-image-2">
+                <section class="mt-3 flex items-center justify-between">
+                    <span class="bg-light-red text-custom-black py-0.5 px-3 text-[15px] rounded-full">Review</span>
+                    <span class=" text-dark-gray text-xs pr-4">2 Minute Read</span>
+                    <span class="text-dark-gray text-xs">Writer Name</span>
+                </section>
+                <figcaption class=" text-custom-black ">
+                    <h3 class="my-5 text-[22px] font-futura-bold">
+                        The best cannabis
+                        prices, guaranteed?
+                    </h3>
+                    <p class="text-sm">
+                        2 line preview about the article. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        do
+                        eiusmod tempor incididunt ut la met, consectetur adipiscin....
+                    </p>
+                </figcaption>
+            </figure>
+        </article>
+    </main>
+
+
 
     <script src="../dist/script.js"></script>
     <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
