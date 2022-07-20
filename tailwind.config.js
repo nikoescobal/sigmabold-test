@@ -3,9 +3,12 @@ module.exports = {
   content: ['./src/**/*.{html,js}', '*.html'],
   theme: {
     fontFamily: {
-      futura: ['futura', 'sans-serif'],
-      'futura-light': ['futura-light', 'sans-serif'],
-      'futura-bold': ['futura-bold', 'sans-serif'],
+      'futura-pt-book': ['Futura PT Book', 'sans-serif'],
+      'futura-pt-light': ['Futura PT Light', 'sans-serif'],
+      'futura-pt-medium': ['Futura PT Medium', 'sans-serif'],
+      'futura-pt-demi': ['Futura PT Demi', 'sans-serif'],
+      'futura-pt-bold': ['Futura PT Bold', 'sans-serif'],
+      'futura-pt-heavy': ['futura PT Heavy', 'sans-serif'],
     },
     extend: {
       backgroundImage: {

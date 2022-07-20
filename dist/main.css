@@ -418,11 +418,41 @@ video {
 }
 
 @font-face {
-  font-family: 'Futura Light';
+  font-family: 'Futura PT Book';
 
-  font-weight: 400;
+  src: url('../fonts/Futura/FuturaPTBook.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Futura PT Demi';
+
+  src: url('../fonts/Futura/FuturaPTDemi.otf') format('otf');
+
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Futura PT Light';
 
   src: url('../fonts/Futura/FuturaPTLight.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Futura PT Medium';
+
+  src: url('../fonts/Futura/FuturaPTMedium.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Futura PT Heavy';
+
+  src: url('../fonts/Futura/FuturaPTHeavy.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Futura PT Bold';
+
+  src: url('../fonts/Futura/FuturaPTBold.otf') format('otf');
 }
 
 *, ::before, ::after {
@@ -1183,12 +1213,8 @@ video {
   vertical-align: middle;
 }
 
-.font-futura-light {
-  font-family: futura-light, sans-serif;
-}
-
-.font-futura-bold {
-  font-family: futura-bold, sans-serif;
+.font-futura-pt-demi {
+  font-family: Futura PT Demi, sans-serif;
 }
 
 .text-sm {
@@ -1233,6 +1259,10 @@ video {
 
 .font-thin {
   font-weight: 100;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .text-white {
@@ -1313,18 +1343,6 @@ video {
 
 .duration-300 {
   transition-duration: 300ms;
-}
-
-.placeholder\:font-futura-light::-moz-placeholder {
-  font-family: futura-light, sans-serif;
-}
-
-.placeholder\:font-futura-light:-ms-input-placeholder {
-  font-family: futura-light, sans-serif;
-}
-
-.placeholder\:font-futura-light::placeholder {
-  font-family: futura-light, sans-serif;
 }
 
 .placeholder\:font-extralight::-moz-placeholder {
