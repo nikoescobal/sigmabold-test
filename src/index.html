@@ -57,7 +57,7 @@
         <form>
             <label class="relative block ml-[31px] mr-[28px] pt-[15px] pb-[21px] space-x-4">
                 <input
-                    class="w-full bg-gray-100 placeholder-dark-gray text-sm md:text-lg lg:text-2xl items-center align-middle placeholder:font-extralight border-none rounded-full h-[31px] pl-[19px] pr-2 focus:outline-none"
+                    class="w-full bg-gray-100 placeholder-dark-gray text-sm md:text-lg items-center align-middle placeholder:font-extralight border-none rounded-full h-[31px] pl-[19px] pr-2 focus:outline-none"
                     placeholder="Search" type="text" />
 
                 <span class="absolute inset-y-0 right-0 flex content-center items-center pr-3">
@@ -408,7 +408,7 @@
             </div>
 
             <div class="text-center">
-                <div class="flex justify-center mt-[39px] mb-3 items-center mx-14 md:w-full">
+                <div class="flex justify-center mt-[39px] mb-3 items-center mx-14 md:mx-auto md:w-1/2">
                     <button class="w-full rounded-lg text-white bg-custom-green border-none px-8 pt-[19px] pb-4">Get
                         Your
                         Card</button>
@@ -419,23 +419,24 @@
 
     </main>
 
-    <footer class=" flex flex-col text-sm space-x-2">
+    <footer class=" flex justify-center w-full flex-col text-sm space-x-2">
         <div class="flex justify-center flex-col gap-9 my-0 mx-auto mb-5">
-            <div><img src="./assets/footer.png" alt="logo"></div>
+            <div class="text-center w-full flex justify-center pt-24">
+                <img src="./assets/mobile/logo-bottom.svg" alt="logo-bottom">
+            </div>
 
             <ul class="flex items-center gap-3 justtify-between">
-                <li><img src="./assets/youtube.svg" alt="youtube-logo"></li>
-                <li><img src="./assets//instagram.svg" alt="instagram-logo"></li>
-                <li><img src="./assets/mail.svg" alt="mail"></li>
-                <li><img src="./assets/yelp.svg" alt="yelp"></li>
-                <li><button
-                        class="text-green text-bold border-green border-solid border-2 py-2 px-[15px] rounded-[8px] ">Get
+                <li><img src="./assets/mobile/youtube.svg" alt="youtube-logo"></li>
+                <li><img src="./assets/mobile/instagram.svg" alt="instagram-logo"></li>
+                <li><img src="./assets/mobile/ mail.svg" alt="mail-logo"></li>
+                <li><img src="./assets/mobile/yelp.svg" alt="yelp-logo"></li>
+                <li><button class="text-green text-bold border-custom-green border-2 py-2 px-[15px] rounded-[8px] ">Get
                         Your Card</button></li>
             </ul>
         </div>
-        <div class="footer-details space-x-2 gap-6 flex mb-10 text-blue ">
-            <ul class="text-blue">
-                <li class="">Navigation</li>
+        <div class="flex justify-center space-x-2 text-xs px-3 gap-6 mt-6 mb-10 text-blue text-dark-blue">
+            <ul>
+                <li class="font-bold pb-1">Navigate</li>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Login</a></li>
                 <li><a href="#">Verify A Patient</a></li>
@@ -443,7 +444,7 @@
             </ul>
 
             <ul>
-                <li>Contact</li>
+                <li class="font-bold pb-1">Contact</li>
                 <li><a href="#">Contact Us</a></li>
                 <li><a href="#">FAQ</a></li>
                 <li><a href="#">Docters</a></li>
@@ -451,15 +452,15 @@
             </ul>
 
             <ul>
-                <li>Legal</li>
+                <li class="font-bold pb-1">Legal</li>
                 <li><a href="#">Terms & conditions</a></li>
                 <li><a href="#">Privacy Policy</a></li>
             </ul>
         </div>
-        <div class="flex justify-between text-blue space-x-2 gap-6">
+        <div class="flex justify-center space-x-8 text-xs px-8 gap-6 mb-10 text-blue text-dark-blue">
             <div>
                 <ul>
-                    <li class="">Find Your State</li>
+                    <li class="font-bold whitespace-nowrap pb-1">Find Your State</li>
                     <li><a href="#">Califonia</a></li>
                     <li><a href="#">Connecticut</a></li>
                     <li><a href="#">Illinais</a></li>
@@ -476,7 +477,7 @@
             </div>
             <div>
                 <ul>
-                    <li>Locations</li>
+                    <li class="font-bold pb-1">Locations</li>
                     <li>New York City</a></li>
                     <li>535 5th Ave, New York, NY 10017</li>
                     <li>8AM EST-10PM EST</li>
