@@ -32,10 +32,7 @@ module.exports = {
       },
       screens: {
         mobile: '390px',
-        // => @media (min-width: 640px) { ... }
-
         desktop: '1728px',
-        // => @media (min-width: 1280px) { ... }
       },
     },
   },
