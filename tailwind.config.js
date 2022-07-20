@@ -8,10 +8,6 @@ module.exports = {
       'futura-bold': ['futura-bold', 'sans-serif'],
     },
     extend: {
-      padding: {
-        '1/3': '33.33333%',
-        '2/3': '66.66667%',
-      },
       backgroundImage: {
         'footer-overlay': "url('./src/assets/desktop/footer-overlay.png')",
       },
