@@ -9,10 +9,8 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'footer-overlay-mobile':
-          "url('./src/assets/mobile/footer-overlay.svg')",
-        'footer-overlay-desktop':
-          "url('./src/assets/desktop/footer-overlay.svg')",
+        'footer-overlay-mobile': "url('./assets/mobile/footer-overlay.svg')",
+        'footer-overlay-desktop': "url('./assets/desktop/footer-overlay.svg')",
       },
       colors: {
         'dark-blue': 'hsla(212, 61%, 30%, 1)',
