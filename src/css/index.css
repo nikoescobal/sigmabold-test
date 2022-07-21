@@ -33,3 +33,7 @@
     src: url('../fonts/Futura/FuturaPTBold.otf') format('otf');
   }
 }
+
+body {
+  font-family: 'Futura', 'sans-serif';
+}
