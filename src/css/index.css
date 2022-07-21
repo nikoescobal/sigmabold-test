@@ -37,3 +37,8 @@
 body {
   font-family: 'Futura', 'sans-serif';
 }
+
+p {
+  font-family: 'Futura PT Light', 'sans-serif';
+  font-weight: 300;
+}
