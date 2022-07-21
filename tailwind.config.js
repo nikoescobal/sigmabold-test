@@ -34,8 +34,11 @@ module.exports = {
         'lighter-gray': 'hsla(0, 0%, 63%, 1)',
       },
       screens: {
-        mobile: '390px',
-        desktop: '1728px',
+        'mobile': '390px',
+        // => @media (min-width: 390px) { ... }
+
+        'desktop': '1728px',
+        // => @media (min-width: 1728px) { ... }
       },
     },
   },

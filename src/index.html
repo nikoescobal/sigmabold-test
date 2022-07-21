@@ -21,7 +21,7 @@
 
     <!-- Header Section -->
     <header
-        class="w-full bg-dark-blue h-20 md:h-[158px] flex items-center justify-between desktop:pl-[73px] desktop:pr-[67.48px] lg:pl-14 lg:pr-12 pl-[27px] pr-7 transition-all duration-200"
+        class="w-full bg-dark-blue h-20 md:h-[158px] flex items-center justify-between lg:pl-14 lg:pr-12 pl-[27px] pr-7 transition-all duration-200"
         :class="{'h-24': !scrolledFromTop, 'h-14': scrolledFromTop}">
         <a href="#">
             <img class="block md:hidden transform origin-left transition duration-200" src="./assets/icons/logo.svg"
@@ -35,7 +35,7 @@
                 <img src="./assets/icons/menu.svg" alt="menu">
             </button>
             <ul class="fixed left-0 right-0 min-h-screen w-full min-h-12 items-center bg-dark-blue pt-24 text-white space-y-4 mt-8 px-8 transform transition duration-300 translate-x-full md:flex
-                md:relative md:min-h-0 md:space-y-0 md:space-x-10 md:px-0 md:pb-10 md:translate-x-0 lg:space-x-14 desktop:space-x-24"
+                md:relative md:min-h-0 md:space-y-0 md:space-x-10 md:px-0 md:pb-10 md:translate-x-0 lg:space-x-14"
                 :class="{'translate-x-full': !navOpen}" :class="{'translate-x-0': navOpen}">
                 <li class="underline underline-offset-2">
                     <a href="#" @click="navOpen = false">Home</a>
@@ -77,7 +77,7 @@
         </form>
 
         <ul
-            class="snap-proximity items-center px-4 pb-[21px] snap-x space-x-2 md:space-x-3 lg:space-x-5 desktop:space-x-7 md:justify-center flex flex-nowrap whitespace-nowrap overflow-x-scroll text-sm md:text-base lg:text-xl">
+            class="snap-proximity items-center px-4 pb-[21px] snap-x space-x-2 md:space-x-3 lg:space-x-5 md:justify-center flex flex-nowrap whitespace-nowrap overflow-x-scroll text-sm md:text-base lg:text-xl">
             <p class="ml-10 pr-[6.5px] lg:pr-12">Filter by Category</p>
             <li class="snap-center border-custom-red border text-custom-red py-1 px-4 rounded-full">
                 <a href="#">Reviews</a>
@@ -98,12 +98,12 @@
     </nav>
 
     <!-- Main Section -->
-    <main class="desktop:px-72 xl:px-40 lg:px-12 px-8">
+    <main class="desktop:px-[263px] xl:px-40 lg:px-12 px-8">
 
         <!-- Feature/Trending Posts -->
         <section class="h-full">
             <h1
-                class="lg:hidden text-dark-blue justify-center text-center flex font-semibold font-futura-pt-demi pt-[45px] pb-[53px] text-[25px]">
+                class="lg:hidden text-dark-blue justify-center text-center flex font-bold font-futura-pt-demi pt-[45px] pb-[53px] text-[25px]">
                 Feature Blog Posts
             </h1>
             <h2
@@ -116,8 +116,8 @@
                     <article class="px-6 pb-4 rounded-lg flex flex-col justify-between w-full h-full">
                         <figure>
                             <div
-                                class="rounded-lg pt-6 pb-5 mobile:h-40 h-full w-full lg:max-h-80 xl:max-h-96 justify-center mx-auto">
-                                <img class="object-cover rounded-lg w-full h-full" src="./assets/mobile/movie-night.svg"
+                                class="pt-6 pb-5 rounded-lg mobile:h-40 h-full w-full lg:max-h-80 xl:max-h-96 justify-center mx-auto">
+                                <img class="rounded-lg object-cover w-full h-full" src="./assets/mobile/movie-night.svg"
                                     alt="movie-night">
                             </div>
                             <figcaption
@@ -126,7 +126,7 @@
                                 <div class="flex items-center justify-between">
                                     <div class="space-x-2">
                                         <span
-                                            class="bg-custom-orange text-custom-black py-0.5 px-3 text-[15px] rounded-full">Lifestyle</span>
+                                            class="bg-custom-orange text-custom-black py-1 px-3 text-[15px] rounded-full">Lifestyle</span>
                                         <span class=" text-dark-gray text-xs pr-4">2 Minute Read</span>
                                     </div>
 
@@ -135,29 +135,24 @@
                                 <h3 class="text-[25px] leading-[25px] pt-2 font-semibold font-futura-pt-demi">
                                     THC for TLC? Let’s talk cannabis and intimacy.
                                 </h3>
-                                <p class="text-[15px] lg:hidden leading-[18.27px] lg:leading-5">
+                                <p class="text-[15px] leading-[18.27px] lg:leading-5">
                                     2 line preview about the article. Lorem ipsum dolor sit amet, consectetur adipiscing
                                     elit,
                                     sed
                                     do
-                                    eiusmod tempor incididunt ut la met, consectetur adipiscin....
-                                </p>
-                                <p class="text-[15px] hidden lg:visible lg:block leading-[18.27px]">
-                                    2 line preview about the article. Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Justo nec
-                                    ultrices dui sapien eget. Ullamcorper ske. Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                    Justo nec ultrices dui sapien eget. Ullamcorper morbi tincidunt ornare massa eget
-                                    egestas purus viverra accumsan. Lorem ipsum dolor sit amet, aliqua. Justo nec
-                                    ultrices dui sapien eget. Ullamcorper ske. Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                                    eiusmod tempor incididunt ut la met, consectetur adipiscin line preview about the
+                                    article. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit,
+                                    sed
+                                    do
+                                    eiusmod tempor incididunt ut la met, consectetur adipiscin...
                                 </p>
                             </figcaption>
                         </figure>
                     </article>
                 </div>
 
-                <div class="flex flex-col h-full lg:flex-auto justify-between">
+                <div class="flex flex-col h-full lg:flex-auto gap-8 justify-between">
                     <article class="mt-6 md:mt-0 bg-white rounded-lg px-6 pb-4">
                         <figure>
                             <div
@@ -170,7 +165,7 @@
                                 <div class="flex items-center justify-between">
                                     <div class="space-x-2">
                                         <span
-                                            class="bg-light-red text-custom-black py-0.5 px-3 text-[15px] rounded-full">Review</span>
+                                            class="bg-light-red text-custom-black py-1 px-3 text-[15px] rounded-full">Review</span>
                                         <span class=" text-dark-gray text-xs pr-4">2 Minute Read</span>
                                     </div>
                                     <span class="text-dark-gray text-xs">Writer Name</span>
@@ -189,7 +184,6 @@
                         </figure>
                     </article>
                     <aside class="text-white bg-light-blue rounded-lg my-0 flex flex-col content-center py-[25px] px-5">
-
                         <div class="flex items-center justify-between">
                             <p class="text-xs">Weekly Wellness Tip</p>
                             <img src="./assets/icons/heart.svg" alt="heart logo">
@@ -205,138 +199,105 @@
         </section>
 
         <!-- New Posts -->
-        <section class="flex flex-col lg:pl-12 lg:pr-20">
+        <section class="flex flex-col gap-6">
             <h2
-                class="text-dark-blue flex justify-center lg:justify-start lg:pl-20 text-center font-futura-bold pt-[69px] text-[25px]">
+                class="text-dark-blue flex justify-center lg:justify-start text-center font-futura-pt-demi font-bold pt-[69px] text-[25px]">
                 New Posts</h2>
-            <article class="mt-6 bg-white rounded-lg mb-0 mx-[34px] flex flex-col content-center py-[25px] px-5">
-                <figure class="lg:flex justify-between lg:max-h-[315px] gap-12">
-                    <img class="object-cover w-full rounded-lg" src="./assets/mobile/woman-on-laptop.svg"
-                        alt="woman-on-laptop">
-                    <div class="lg:w-4/5 xl:w-full">
-                        <section class="mt-3 flex items-center justify-between">
-                            <div class="space-x-2">
-                                <span
-                                    class="bg-custom-green text-custom-black py-0.5 px-3 text-[15px] rounded-full">Education
-                                </span>
-                                <span class=" text-dark-gray text-xs lg:text-[15px] pr-4">2 Minute Read</span>
-                            </div>
-
-                            <span class="text-dark-gray text-xs lg:text-[15px]">Writer Name</span>
-                        </section>
-                        <figcaption class="text-custom-black ">
-                            <h3 class="my-5 text-[22px] lg:text-3xl lg:pt-8 lg:pb-4 font-futura-bold">
-                                THC for TLC? Let’s talk cannabis and intimacy.
-                            </h3>
-                            <p class="text-sm lg:text-[15px]">
-                                2 line preview about the article. Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Justo nec
-                                ultrices dui sapien eget. Ullamcorper ske. Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Justo nec ultrices dui sapien eget. Ullamcorper morbi tincidunt ornare massa eget
-                                egestas purus viverra accumsan. Lorem ipsum dolor sit amet,
-                            </p>
-                        </figcaption>
+            <article class="flex flex-col md:flex-row w-full bg-white p-6 rounded-lg">
+                <figure class="md:flex gap-8">
+                    <div class="w-full rounded-lg justify-center mx-auto">
+                        <img class="object-cover rounded-lg w-full h-full" src="./assets/mobile/woman-on-laptop.svg"
+                            alt="woman-on-laptop">
                     </div>
+                    <figcaption class="text-custom-black rounded-lg flex flex-col justify-around w-full gap-6">
 
-                </figure>
-            </article>
-            <article class="mt-6 bg-white rounded-lg my-0 mx-[34px] flex flex-col content-center p-[25px]">
-                <figure class="lg:flex justify-between gap-12 lg:h-[315px]">
-                    <img class="object-cover w-full rounded-lg" src="./assets/mobile/sleeping-mom-and-daughter.svg"
-                        alt="sleeping-mom-and-daughter">
-                    <div class="lg:w-4/5 xl:w-full">
-                        <section class="mt-3 flex items-center justify-between">
-                            <div class="space-x-2">
-                                <span
-                                    class="bg-lighter-blue text-custom-black py-0.5 px-3 text-[15px] rounded-full">Laws
-                                </span>
-                                <span class=" text-dark-gray text-xs pr-4">2 Minute Read</span>
-                            </div>
-                            <span class="text-dark-gray text-xs">Writer Name</span>
-                        </section>
-                        <figcaption class=" text-custom-black ">
-                            <h3 class="my-5 text-[22px] lg:text-3xl lg:pt-8 lg:pb-4 font-futura-bold">
-                                The best cannabis
-                                prices, guaranteed?
-                            </h3>
-                            <p class="text-sm lg:text-[15px]">
-                                2 line preview about the article. Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Justo nec
-                                ultrices dui sapien eget. Ullamcorper ske. Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Justo nec ultrices dui sapien eget. Ullamcorper morbi tincidunt ornare massa eget
-                                egestas purus viverra accumsan. Lorem ipsum dolor sit amet,
-                            </p>
-                        </figcaption>
-                    </div>
-                </figure>
-            </article>
-            <article class="mt-6 bg-white rounded-lg my-0 mx-[34px] flex flex-col content-center p-[25px]">
-                <figure class="lg:flex justify-between lg:max-h-[315px] gap-12">
-                    <img class="object-cover w-full rounded-lg" src="./assets/mobile/girl-smiling.svg"
-                        alt="girl-smiling">
-                    <div class="lg:w-4/5 xl:w-full">
-                        <section class="mt-3 flex items-center justify-between">
-                            <div class="space-x-2">
-                                <span
-                                    class="bg-custom-purple text-custom-black py-0.5 px-3 text-[15px] rounded-full">News</span>
-                                <span class=" text-dark-gray text-xs pr-4">2 Minute Read</span>
+                        <div class="flex items-center pt-4 justify-between">
+                            <div class="space-x-3">
+                                <span class="bg-custom-green py-1 px-3 text-custom-black rounded-full">Education</span>
+                                <span class=" text-dark-gray text-xs">2 Minute Read</span>
                             </div>
 
                             <span class="text-dark-gray text-xs">Writer Name</span>
-                        </section>
-                        <figcaption class="text-custom-black ">
-                            <h3 class="my-5 text-[22px] lg:text-3xl lg:pt-8 lg:pb-4 font-futura-bold">
-                                THC for TLC? Let’s talk cannabis and intimacy.
-                            </h3>
-                            <p class="text-sm lg:text-[15px]">
-                                2 line preview about the article. Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Justo nec
-                                ultrices dui sapien eget. Ullamcorper ske. Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Justo nec ultrices dui sapien eget. Ullamcorper morbi tincidunt ornare massa eget
-                                egestas purus viverra accumsan. Lorem ipsum dolor sit amet,
-                            </p>
-                        </figcaption>
-                    </div>
+                        </div>
+                        <h3 class="text-[25px] leading-[25px] xl:text-3xl font-semibold font-futura-pt-demi">
+                            Lorem Ipsum dolor si amet.
+                        </h3>
+                        <p class="text-[15px] leading-[18.27px] lg:leading-5">
+                            2 line preview about the article. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Justo nec ultrices dui
+                            sapien eget. Ullamcorper ske. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Justo nec ultrices dui sapien
+                            eget. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan. Lorem
+                            ipsum dolor sit amet,
+                        </p>
+                    </figcaption>
                 </figure>
             </article>
-            <article class="mt-6 bg-white rounded-lg my-0 mx-[34px] flex flex-col content-center p-[25px]">
-                <figure class="lg:flex justify-between lg:max-h-[315px] gap-12">
-                    <img class="object-cover w-full rounded-lg" src="./assets/mobile/woman-stretching.svg"
-                        alt="woman-stretching">
-                    <div class="lg:w-4/5 xl:w-full">
-                        <section class="mt-3 flex items-center justify-between">
-                            <div class="space-x-2">
-                                <span
-                                    class="bg-custom-orange text-custom-black py-0.5 px-3 text-[15px] rounded-full">Lifestyle</span>
-                                <span class=" text-dark-gray text-xs pr-4">2 Minute Read</span>
-                            </div>
-                            <span class="text-dark-gray text-xs">Writer Name</span>
-                        </section>
-                        <figcaption class=" text-custom-black ">
-                            <h3 class="my-5 text-[22px] lg:text-3xl lg:pt-8 lg:pb-4 font-futura-bold">
-                                The best cannabis
-                                prices, guaranteed?
-                            </h3>
-                            <p class="text-sm lg:text-[15px]">
-                                2 line preview about the article. Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Justo nec
-                                ultrices dui sapien eget. Ullamcorper ske. Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Justo nec ultrices dui sapien eget. Ullamcorper morbi tincidunt ornare massa eget
-                                egestas purus viverra accumsan. Lorem ipsum dolor sit amet,
-                            </p>
-                        </figcaption>
+            <article class="flex flex-col md:flex-row w-full bg-white p-6 rounded-lg">
+                <figure class="md:flex gap-8">
+                    <div class="w-full rounded-lg justify-center mx-auto">
+                        <img class="object-cover rounded-lg w-full h-full"
+                            src="./assets/mobile/sleeping-mom-and-daughter.svg" alt="sleeping-mom-and-daughter">
                     </div>
+                    <figcaption class="text-custom-black rounded-lg flex flex-col justify-around w-full gap-6">
+
+                        <div class="flex items-center pt-4 justify-between">
+                            <div class="space-x-3">
+                                <span class="bg-lighter-blue py-1 px-3 text-custom-black rounded-full">Laws</span>
+                                <span class=" text-dark-gray text-xs">2 Minute Read</span>
+                            </div>
+
+                            <span class="text-dark-gray text-xs">Writer Name</span>
+                        </div>
+                        <h3 class="text-[25px] leading-[25px] xl:text-3xl font-semibold font-futura-pt-demi">
+                            Lorem Ipsum dolor si amet.
+                        </h3>
+                        <p class="text-[15px] leading-[18.27px] lg:leading-5">
+                            2 line preview about the article. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Justo nec ultrices dui
+                            sapien eget. Ullamcorper ske. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Justo nec ultrices dui sapien
+                            eget. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan. Lorem
+                            ipsum dolor sit amet,
+                        </p>
+                    </figcaption>
+                </figure>
+            </article>
+            <article class="flex flex-col md:flex-row w-full bg-white p-6 rounded-lg">
+                <figure class="md:flex gap-8">
+                    <div class="w-full rounded-lg justify-center mx-auto">
+                        <img class="object-cover rounded-lg w-full h-full" src="./assets/mobile/woman-stretching.svg"
+                            alt="woman-stretching">
+                    </div>
+                    <figcaption class="text-custom-black rounded-lg flex flex-col justify-around w-full gap-6">
+
+                        <div class="flex items-center pt-4 justify-between">
+                            <div class="space-x-3">
+                                <span class="bg-custom-orange py-1 px-3 text-custom-black rounded-full">Lifestyle</span>
+                                <span class=" text-dark-gray text-xs">2 Minute Read</span>
+                            </div>
+
+                            <span class="text-dark-gray text-xs">Writer Name</span>
+                        </div>
+                        <h3 class="text-[25px] leading-[25px] xl:text-3xl font-semibold font-futura-pt-demi">
+                            Lorem Ipsum dolor si amet.
+                        </h3>
+                        <p class="text-[15px] leading-[18.27px] lg:leading-5">
+                            2 line preview about the article. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Justo nec ultrices dui
+                            sapien eget. Ullamcorper ske. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Justo nec ultrices dui sapien
+                            eget. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra accumsan. Lorem
+                            ipsum dolor sit amet,
+                        </p>
+                    </figcaption>
                 </figure>
             </article>
         </section>
 
         <!-- Top Posts -->
         <section>
-            <h2 class="text-dark-blue text-center font-futura-bold pt-[69px] text-[25px]">Top Posts</h2>
+            <h2 class="text-dark-blue text-center font-futura-pt-demi font-semibold">Top Posts</h2>
             <div class="lg:grid lg:grid-cols-3 lg:gap-4 text-center lg:place-items-center">
                 <article
                     class="mt-6 bg-white rounded-lg my-0 mx-[34px] lg:mx-0 flex flex-col content-center py-[25px] lg:h-full px-5 lg:w-96">
@@ -349,7 +310,6 @@
                                     class="bg-custom-green text-custom-black py-0.5 px-3 text-[15px] rounded-full">Education</span>
                                 <span class=" text-dark-gray text-xs pr-4">2 Minute Read</span>
                             </div>
-
                             <span class="text-dark-gray text-xs">Writer Name</span>
                         </section>
                         <figcaption class="text-custom-black ">
