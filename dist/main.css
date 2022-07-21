@@ -1811,6 +1811,11 @@ p {
     padding-bottom: 6rem;
   }
 
+  .lg\:px-36 {
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+
   .lg\:pl-14 {
     padding-left: 3.5rem;
   }
