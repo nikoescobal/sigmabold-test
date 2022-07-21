@@ -611,9 +611,10 @@
     <section
         class="hidden lg:flex bg-dark-blue lg:backdrop-blur-sm lg:bg-cover scale-100 lg:flex-col items-center justify-center lg:max-h-[1009px]"
         style="background-image: url('./assets/desktop/footer-overlay.svg');">
-        <div class="py-[100px] px-[70px] lg:px-96 flex flex-col justify-between space-y-8 gap-4 text-white">
-            <h2 class="font-bold text-[25px] lg:text-[50px] lg:leading-[50px] leading-7"> The NuggMD Promise</h2>
-            <p class="font-futura-pt-light leading-5 lg:text-[25px] lg:leading-[34px] font-light">
+        <div class="py-[100px] px-[70px] desktop:px-96 flex flex-col justify-between space-y-8 gap-4 text-white">
+            <h2 class="font-bold text-[25px] desktop:text-[50px] desktop:leading-[50px] leading-7"> The NuggMD Promise
+            </h2>
+            <p class="font-futura-pt-light leading-5 desktop:text-[25px] desktop:leading-[34px] font-light">
                 We are a team of technology enthusiasts and state-licensed doctors. We believe all people deserve
                 access
                 to medical cannabis if they think it might improve their quality of life. Since our founding in 2015
@@ -626,7 +627,8 @@
                 healthcare ecosystem.
             </p>
 
-            <p class="hidden lg:block font-futura-pt-light lg:text-[25px] lg:leading-[34px] font-light leading-5">
+            <p
+                class="hidden xl:block font-futura-pt-light desktop:text-[25px] desktop:leading-[34px] font-light leading-5">
                 Whether you’re a cannabis connoisseur
                 or thinking
                 of
@@ -640,11 +642,10 @@
                 <input
                     class="placeholder:text-lighter-gray font-thin placeholder:font-futura-pt-light border-none text-custom-black lg:text-base w-full md-w-1/3 text-xs rounded-lg p-4"
                     type="email" required placeholder="enter your email">
-                <div class="p-10">
-
-                    <div class="dropdown inline-block absolute right-1">
+                <div>
+                    <div class="dropdown inline-block absolute right-1 top-1">
                         <button
-                            class="bg-custom-green justify-center right-1 text-gray-700 font-semibold p-6 rounded inline-flex items-center">
+                            class="bg-custom-green justify-center text-gray-700 font-semibold p-5 rounded inline-flex items-center">
                             <div class="flex justify-center items-center text-center">
                                 <img class="w-1/2 absolute block text-white fill-white"
                                     src="./assets/icons/dropdown.svg" alt="dropdown.svg">

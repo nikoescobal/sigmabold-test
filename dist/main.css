@@ -651,10 +651,6 @@ video {
   top: 0.25rem;
 }
 
-.left-1 {
-  left: 0.25rem;
-}
-
 .order-2 {
   order: 2;
 }
@@ -1136,6 +1132,10 @@ video {
 
 .p-3 {
   padding: 0.75rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
 }
 
 .px-8 {
@@ -1857,6 +1857,10 @@ p {
 }
 
 @media (min-width: 1280px) {
+  .xl\:block {
+    display: block;
+  }
+
   .xl\:max-h-96 {
     max-height: 24rem;
   }
@@ -1897,5 +1901,26 @@ p {
   .desktop\:px-\[263px\] {
     padding-left: 263px;
     padding-right: 263px;
+  }
+
+  .desktop\:px-96 {
+    padding-left: 24rem;
+    padding-right: 24rem;
+  }
+
+  .desktop\:text-\[50px\] {
+    font-size: 50px;
+  }
+
+  .desktop\:text-\[25px\] {
+    font-size: 25px;
+  }
+
+  .desktop\:leading-\[50px\] {
+    line-height: 50px;
+  }
+
+  .desktop\:leading-\[34px\] {
+    line-height: 34px;
   }
 }
