@@ -77,7 +77,7 @@
         </form>
 
         <ul
-            class="snap-proximity items-center px-4 pb-[21px] lg:pb-0 snap-x space-x-2 md:space-x-3 lg:space-x-5 flex flex-nowrap whitespace-nowrap overflow-x-scroll text-sm md:text-base lg:text-xl">
+            class="snap-proximity items-center px-4 pb-[21px] lg:pb-0 snap-x space-x-2 md:space-x-3 lg:space-x-5 flex flex-nowrap whitespace-nowrap lg:overflow-x-hidden overflow-x-scroll text-sm md:text-base lg:text-xl">
             <p class="ml-10 pr-[6.5px] lg:pr-12">Filter by Category</p>
             <li class="snap-center border-custom-red border text-custom-red py-1 px-4 rounded-full">
                 <a href="#">Reviews</a>
@@ -720,7 +720,7 @@
 
 
     <!-- Footer Section -->
-    <div class="text-center w-full flex justify-center pt-24">
+    <!-- <div class="text-center w-full flex justify-center pt-24">
         <img src="./assets/icons/logo-bottom.svg" alt="logo-bottom">
     </div>
     <footer
@@ -814,12 +814,106 @@
             </div>
         </div>
 
+    </footer> -->
+
+    <footer class="h-full flex-wrap py-2 px-10 text-xs flex flex-col">
+        <nav class="h-full w-full">
+            <div class="flex justify-center mt-8 mb-4 lg:mt-40 lg:mb-28">
+                <img src="./assets/icons/logo-bottom.svg" alt="logo-bottom">
+            </div>
+            <ul class="justify-around w-80 space-x-5 mx-auto items-center flex">
+                <li> <a href="#"> <img src="./assets/icons/youtube.svg" alt="youtube-logo"></a></li>
+                <li> <a href="#"> <img src="./assets/icons/instagram.svg" alt="instagram-logo"></a></li>
+                <li> <a href="#"> <img src="./assets/icons/mail.svg" alt="mail-logo"></a></li>
+                <li> <a href="#"> <img src="./assets/icons/yelp.svg" alt="yelp-logo"></a></li>
+                <li class="whitespace-nowrap lg:order-2 pl-3"><a href=""
+                        class="text-center my-5 outline outline-2 offset-2 font-bold font-futura-pt-bold text-custom-green outline-custom-green inline-flex rounded-lg py-2 px-5">Get
+                        Your Card</a></li>
+            </ul>
+            <section class="justify-center pt-5 flex flex-col text-dark-blue lg:flex lg:flex-row gap-6">
+                <div class="items-baseline flex mx-auto space-x-3 md:space-x-10 gap-6 md:gap-12">
+                    <ul class="flex pl-1 flex-col font-futura-pt-light space-y-2">
+                        <li class="pb-1 font-futura-pt-demi font-bold"><a href="">Navigate</a></li>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Login</a></li>
+                        <li class="whitespace-nowrap"><a href="">Verify A Patient</a></li>
+                        <li><a href="">Blog</a></li>
+                    </ul>
+                    <ul class="flex flex-col font-futura-pt-light space-y-2">
+                        <li class="pb-1 font-futura-pt-demi font-bold">Contact</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Doctors</a></li>
+                    </ul>
+                    <ul class="flex flex-col font-futura-pt-light space-y-2">
+                        <li><a href="" class="font-bold font-futura-pt-bold text-dark-blue">Legal</a></li>
+                        <li class="whitespace-nowrap"><a href="">Terms & Conditions</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="items-baseline flex gap-8 space-x-3 mx-auto">
+                    <ul class="pl-1 flex flex-col font-futura-pt-light space-y-2">
+                        <li class="whitespace-nowrap"><a href="#"
+                                class="font-bold font-futura-pt-bold text-dark-blue">Find Your State</a></li>
+                        <li><a href="#">California</a></li>
+                        <li><a href="#">Connecticut</a></li>
+                        <li><a href="#">Illinois</a></li>
+                        <li><a href="#">Maine</a></li>
+                        <li><a href="#">Missouri</a></li>
+                        <li><a href="#">Nevada</a></li>
+                        <li><a href="#">New Jersey</a></li>
+                        <li><a href="#">New York</a></li>
+                        <li><a href="#">Ohio</a></li>
+                        <li><a href="#">Oklahoma</a></li>
+                        <li><a href="#">Pennsylvania</a></li>
+                        <li><a href="#">Virginia</a></li>
+
+                    </ul>
+                    <div class="px-2 flex flex-col space-y-5 lg:flex-row">
+                        <div class="flex flex-col space-y-5">
+                            <ul class="flex flex-col font-futura-pt-light space-y-1">
+                                <li class="font-bold font-futura-pt-bold pb-1">Locations</li>
+                                <li><a href="#" class="font-bold font-futura-pt-bold">New York City</a>
+                                </li>
+                                <li class="whitespace-nowrap">535 5th Ave, New York, NY 10017</li>
+                                <li>8AM EST-10PM EST</li>
+                                <li>(929) 512-4413</li>
+                            </ul>
+                            <ul class="flex flex-col font-futura-pt-light space-y-1">
+                                <li><a href="#" class="font-bold font-futura-pt-bold pb-1">White Plains</a>
+                                </li>
+                                <li>White Plains, NY</li>
+                                <li>8AM EST-10PM EST</li>
+                                <li>(914) 922-7218</li>
+                            </ul>
+                        </div>
+                        <div class="flex flex-col font-futura-pt-light space-y-5">
+                            <ul class="flex flex-col">
+                                <li><a href="#" class="font-bold font-futura-pt-bold">San Marcos</a>
+                                </li>
+                                <li>San Marcos, CA 92078</li>
+                                <li>8AM EST-10PM EST</li>
+                                <li>(866) 847-7205</li>
+                            </ul>
+                            <ul class="flex flex-col font-futura-pt-light space-y-2">
+                                <li><a href="#" class="font-bold font-futura-pt-bold">San Francisco</a>
+                                </li>
+                                <li>San Fransisco</li>
+                                <li>San Fransisco, CA 94107</li>
+                                <li>8AM EST-10PM EST</li>
+                                <li>(866) 847-7205</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </nav>
     </footer>
+
 
     <!-- Scripts -->
     <script src="../dist/script.js"></script>
     <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
-
 </body>
 
 
