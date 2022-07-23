@@ -35,7 +35,7 @@
                 <img src="./assets/icons/menu.svg" alt="menu">
             </button>
             <ul class="fixed left-0 right-0 min-h-screen w-full min-h-12 items-center bg-dark-blue pt-24 text-white space-y-4 mt-8 px-8 transform transition duration-300 translate-x-full md:flex
-                md:relative md:min-h-0 md:space-y-0 md:space-x-10 md:px-0 md:pb-10 md:translate-x-0 lg:space-x-14"
+                md:relative md:min-h-0 md:space-y-0 md:px-0 md:pb-10 md:translate-x-0 lg:space-x-14"
                 :class="{'translate-x-full': !navOpen}" :class="{'translate-x-0': navOpen}">
                 <li class="underline underline-offset-2">
                     <a href="#" @click="navOpen = false">Home</a>
@@ -816,21 +816,28 @@
 
     </footer> -->
 
-    <footer class="h-full flex-wrap py-2 px-10 text-xs flex flex-col">
-        <nav class="h-full w-full">
-            <div class="flex justify-center mt-8 mb-4 lg:mt-40 lg:mb-28">
-                <img src="./assets/icons/logo-bottom.svg" alt="logo-bottom">
-            </div>
-            <ul class="justify-around w-80 space-x-5 mx-auto items-center flex">
-                <li> <a href="#"> <img src="./assets/icons/youtube.svg" alt="youtube-logo"></a></li>
-                <li> <a href="#"> <img src="./assets/icons/instagram.svg" alt="instagram-logo"></a></li>
-                <li> <a href="#"> <img src="./assets/icons/mail.svg" alt="mail-logo"></a></li>
-                <li> <a href="#"> <img src="./assets/icons/yelp.svg" alt="yelp-logo"></a></li>
-                <li class="whitespace-nowrap lg:order-2 pl-3"><a href=""
-                        class="text-center my-5 outline outline-2 offset-2 font-bold font-futura-pt-bold text-custom-green outline-custom-green inline-flex rounded-lg py-2 px-5">Get
-                        Your Card</a></li>
+    <footer class="h-full flex-wrap py-2 px-10 text-xs flex flex-col lg:max-w-1/2">
+        <div class="flex justify-center mt-8 mb-4 lg:mt-40 lg:mb-28">
+            <img src="./assets/icons/logo-bottom.svg" alt="logo-bottom">
+        </div>
+        <nav class="h-full w-full lg:flex items-start mx-auto justify-center">
+            <ul
+                class="justify-center lg:justify-start mx-auto lg:mr-0 lg:ml-auto w-80 items-center lg:w-auto flex lg:flex-col-reverse">
+                <div class="flex items-center space-x-5 lg:space-x-2">
+                    <li> <a href="#"> <img src="./assets/icons/youtube.svg" alt="youtube-logo"></a></li>
+                    <li> <a href="#"> <img src="./assets/icons/instagram.svg" alt="instagram-logo"></a></li>
+                    <li> <a href="#"> <img src="./assets/icons/mail.svg" alt="mail-logo"></a></li>
+                    <li> <a href="#"> <img src="./assets/icons/yelp.svg" alt="yelp-logo"></a></li>
+                </div>
+                <div>
+                    <li class="whitespace-nowrap lg:order-2 pl-3"><a href=""
+                            class="text-center my-5 outline outline-2 offset-2 font-bold font-futura-pt-bold text-custom-green outline-custom-green inline-flex rounded-lg py-2 px-5">Get
+                            Your Card</a></li>
+                </div>
+
             </ul>
-            <section class="justify-center pt-5 flex flex-col text-dark-blue lg:flex lg:flex-row gap-6">
+            <section
+                class="justify-center pt-5 flex flex-col text-dark-blue lg:flex lg:flex-row lg:pr-10 gap-6 mr-auto">
                 <div class="items-baseline flex mx-auto space-x-3 md:space-x-10 gap-6 md:gap-12">
                     <ul class="flex pl-1 flex-col font-futura-pt-light space-y-2">
                         <li class="pb-1 font-futura-pt-demi font-bold"><a href="">Navigate</a></li>
@@ -869,7 +876,7 @@
                         <li><a href="#">Virginia</a></li>
 
                     </ul>
-                    <div class="px-2 flex flex-col space-y-5 lg:flex-row">
+                    <div class="px-2 flex flex-col space-y-5 lg:flex-row lg:gap-8">
                         <div class="flex flex-col space-y-5">
                             <ul class="flex flex-col font-futura-pt-light space-y-1">
                                 <li class="font-bold font-futura-pt-bold pb-1">Locations</li>
@@ -888,14 +895,14 @@
                             </ul>
                         </div>
                         <div class="flex flex-col font-futura-pt-light space-y-5">
-                            <ul class="flex flex-col">
+                            <ul class="flex flex-col font-futura-pt-light space-y-1">
                                 <li><a href="#" class="font-bold font-futura-pt-bold">San Marcos</a>
                                 </li>
                                 <li>San Marcos, CA 92078</li>
                                 <li>8AM EST-10PM EST</li>
                                 <li>(866) 847-7205</li>
                             </ul>
-                            <ul class="flex flex-col font-futura-pt-light space-y-2">
+                            <ul class="flex flex-col font-futura-pt-light space-y-1">
                                 <li><a href="#" class="font-bold font-futura-pt-bold">San Francisco</a>
                                 </li>
                                 <li>San Fransisco</li>
