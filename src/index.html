@@ -300,7 +300,7 @@
 
         <!-- Top Posts -->
         <section>
-            <h2 class="text-dark-blue text-center py-6 font-futura-pt-demi font-semibold">Top Posts</h2>
+            <h2 class="text-dark-blue text-center py-6 font-futura-pt-demi font-bold  text-[25px]">Top Posts</h2>
             <div class="lg:grid lg:grid-cols-3 flex flex-col gap-5 lg:gap-9 lg:place-items-center">
                 <article class=" bg-white rounded-lg flex flex-col p-6">
                     <figure>
@@ -369,12 +369,12 @@
                             <h4 class="text-[38px] my-4 pl-6 absolute top-0">
                                 Dispensaries
                                 hate
-                                us. <p class="text-dark-blue mb-12">Wallets
+                                us. <p class="text-dark-blue font-futura-pt-demi font-bold mb-12">Wallets
                                     love us.
                                 </p>
                             </h4>
-                            <div class="absolute text-center rounded-full bottom-10 mx-4 border-2 border-white">
-                                <button class="text-sm px-4 py-2">Save
+                            <div class="absolute text-center rounded-full bottom-7 mx-4 border-2 border-white">
+                                <button class="text-sm px-5 py-4">Save
                                     40-60% on
                                     every
                                     delivery
@@ -384,16 +384,16 @@
                             <div class="pb-16 bg-lighter-red w-full h-30 lg:hidden"></div>
                         </figcaption>
                         <figcaption class="hidden relative lg:flex items-center text-white justify-center">
-                            <h4 class="text-[38px] my-4 pl-6 absolute top-[-49rem]">
+                            <h4 class="text-[38px] font-futura-pt-demi font-bold  my-4 pl-6 absolute top-[-49rem]">
                                 Dispensaries
                                 hate
-                                us. <p class="text-dark-blue mb-12">Wallets
+                                us. <p class="text-dark-blue mb-12 font-futura-pt-demi font-bold ">Wallets
                                     love us.
                                 </p>
                             </h4>
                             <div
                                 class="absolute text-center rounded-full top-[-37rem] left-[0.75rem] mx-4 border-2 border-white">
-                                <button class="text-sm px-4 py-2">Save
+                                <button class="text-sm font-futura-pt-demi font-bold px-4 py-2">Save
                                     40-60% on
                                     every
                                     delivery
@@ -524,15 +524,17 @@
             </div>
         </section>
         <div class="py-10 text-center flex justify-center items-center mx-auto md:w-full">
-            <button class="w-full text-white rounded-sm bg-dim-blue border-none px-8 pt-[19px] pb-4">Load More
+            <button
+                class="w-full text-white rounded-sm text-[25px] font-futura-pt-demi font-bold  bg-dim-blue border-none px-8 pt-[19px] pb-4">Load
+                More
                 Articles</button>
         </div>
     </main>
     <section
-        class="bg-cover bg-bottom aspect-square bg-dark-blue backdrop-blur-sm scale-100 flex flex-col justify-center items-center lg:hidden"
+        class="bg-cover bg-center lg:aspect-square bg-dark-blue backdrop-blur-sm lg:scale-100 flex flex-col justify-center items-center lg:hidden"
         style="background-image: url('./assets/mobile/footer-overlay.svg');">
 
-        <div class="py-[100px] px-[70px] lg:px-96 flex flex-col justify-between space-y-8 gap-4 text-white">
+        <div class="py-[100px] px-12 lg:px-96 flex flex-col justify-between space-y-5 gap-4 text-white">
             <h2 class="font-bold text-[25px] lg:text-[50px] lg:leading-[50px] leading-7"> The NuggMD Promise</h2>
             <p class="font-futura-pt-light leading-5 lg:text-[25px] lg:leading-[34px] font-light">
                 We are a team of technology enthusiasts and state-licensed doctors. We believe all people deserve
@@ -540,12 +542,16 @@
                 to medical cannabis if they think it might improve their quality of life. Since our founding in 2015
                 we’ve held ourselves to the highest standards when recruiting physicians, journalists, and legal
                 experts
-                to join our team. It’s because of this network of passionate professionals that NuggMD is able to
+                to join our team.
+            </p>
+
+            <p class="font-futura-pt-light leading-5 lg:text-[25px] lg:leading-[34px] font-light"> It’s because of this
+                network of passionate professionals that NuggMD is able to
                 provide access to
                 reliable cannabis information, trustworthy medical practitioners, and proactive updates in the
                 cannabis
-                healthcare ecosystem.
-            </p>
+                healthcare ecosystem.</p>
+
 
             <p class="hidden lg:block font-futura-pt-light lg:text-[25px] lg:leading-[34px] font-light leading-5">
                 Whether you’re a cannabis connoisseur
@@ -557,13 +563,13 @@
                 cannabis
                 can help.
             </p>
-            <form action="#" class="flex items-center relative w-full rounded-lg md:justify-center mx-0">
+            <form action="#" class="hidden lg:flex items-center relative w-full rounded-lg md:justify-center mx-0">
                 <input
                     class="placeholder:text-lighter-gray font-thin placeholder:font-futura-pt-light border-none lg:text-base w-full text-xs rounded-lg p-4"
                     type="email" required placeholder="enter your email">
                 <div class="p-10">
 
-                    <div class="dropdown inline-block relative">
+                    <div class="dropdown relative ">
                         <button
                             class="bg-custom-green justify-center text-gray-700 font-semibold p-5 rounded inline-flex items-center">
                             <div class="flex justify-center items-center text-center">
@@ -584,8 +590,14 @@
                     </div>
                 </div>
             </form>
+            <div class="text-center">
+                <button class="bg-custom-green px-14 lg:hidden rounded py-4 font-bold ">Get Your Card</button>
+                <p class="text-lighter-gray text-[13px] leading-[55px] font-futura-pt-book text-center block lg:hidden">
+                    Billed only if
+                    approved.
+                </p>
+            </div>
 
-            <button class="bg-custom-green px-14 lg:hidden rounded py-4 font-bold ">Get Your Card</button>
         </div>
 
     </section>
@@ -675,11 +687,17 @@
     </section>
 
     <aside
-        class="m-10 text-white bg-dim-blue gap-5 lg:w-3/5 lg:py-24 lg:mt-36 text-left lg:text-center lg:mx-auto items-center justify-center rounded flex-col content-center p-8 flex">
+        class="shadow-[0_40px_60px_rgba(0,0,0,0.2)] m-10 text-white bg-dim-blue gap-5 lg:w-3/5 lg:py-24 lg:mt-36 text-left lg:text-center lg:mx-auto justify-center rounded flex-col p-8 flex">
         <div>
-            <h2 class="text-2xl lg:text-4xl leading-7 lg:pb-2 font-bold">Weekly Wellness tips and updates? Subscribe :)
+            <h2 class="text-2xl lg:text-4xl leading-7 md:text-center font-futura-pt-book pr-2 lg:pb-2 font-bold">Weekly
+                Wellness tips
+                and
+                updates? Subscribe :)
             </h2>
-            <p class="lg:text-[15px] pt-4 text-xs lg:leading-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            <p class="lg:text-[15px] md:text-center font-futura-pt-light pt-4 text-xs lg:leading-5">Lorem ipsum dolor
+                sit
+                amet,
+                consectetur adipiscing elit,
                 sed
                 do eiusmod tempor incididunt ut
                 labore
@@ -687,7 +705,8 @@
                 dolore magna.</p>
         </div>
         <div>
-            <form action="#" class="flex items-center relative w-full rounded-lg md:justify-center lg:w-1/2 mx-0">
+            <form action="#"
+                class="flex items-center relative w-full md:justify-center md:mx-auto md:w-1/2 md:max-w-[450px] rounded-lg text-center md:inline mx-0">
                 <input
                     class="placeholder:text-lighter-gray font-thin placeholder:font-futura-pt-light border-none lg:text-base w-full text-xs rounded-lg p-4"
                     type="email" required placeholder="enter your email">
@@ -708,7 +727,7 @@
         </div>
         <nav class="h-full w-full lg:flex items-start mx-auto justify-center mt-4">
             <ul
-                class="justify-center lg:justify-start mx-auto lg:mr-0 lg:ml-auto w-80 items-center lg:w-auto flex lg:flex-col-reverse">
+                class="justify-center lg:justify-start mx-auto lg:mr-0 lg:ml-auto w-80 gap-6 lg:gap-0 items-center lg:w-auto flex lg:flex-col-reverse">
                 <div class="flex items-center space-x-5 lg:space-x-2">
                     <li> <a href="#"> <img src="./assets/icons/youtube.svg" alt="youtube-logo"></a></li>
                     <li> <a href="#"> <img src="./assets/icons/instagram.svg" alt="instagram-logo"></a></li>
