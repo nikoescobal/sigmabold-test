@@ -1102,6 +1102,11 @@ video {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -1684,6 +1689,14 @@ p {
 
   .md\:max-w-\[450px\] {
     max-width: 450px;
+  }
+
+  .md\:max-w-\[350px\] {
+    max-width: 350px;
+  }
+
+  .md\:max-w-\[339px\] {
+    max-width: 339px;
   }
 
   .md\:translate-x-0 {
