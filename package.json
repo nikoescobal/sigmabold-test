@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/nikoescobal/kickoff#readme",
   "devDependencies": {
-    "@babel/eslint-parser": "7.21.3",
+    "@babel/eslint-parser": "7.24.1",
     "concurrently": "7.6.0",
     "eslint": "8.37.0",
     "eslint-config-airbnb-base": "^15.0.0",
